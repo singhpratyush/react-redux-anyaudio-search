@@ -6,6 +6,7 @@
   "author": "Pratyush Singh",
   "license": "MIT",
   "dependencies": {
+    "html-webpack-plugin": "^2.28.0",
     "path": "^0.12.7",
     "webpack": "^2.2.1",
     "webpack-server": "^0.1.2"
