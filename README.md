@@ -16,7 +16,7 @@ yarn install
 
 * Get `AnyAudio` server code if you can, otherwise wait until we make the repository public.
 * Since `AnyAudio`'s main server doesn't allows cross site requests, we have to enable them in a local copy of the server for testing purposes. There are many ways to do it, one of them is using `flask-cors`  
-    ```bash
+    ```
     pip install flask-cors
     ```
 * Add `@flask_cors.cross_origin()` decorator to concerned endpoints (e.g. `/api/v1/search`) -
@@ -28,8 +28,8 @@ yarn install
         ...
     ```
 * Start `AnyAudio` server (if you didn't quit on first step, you know what to do now).
-* Start `React` app - 
-    ```bash
+* Start `React` app -   
+    ```
     yarn dev
     ```
-* Goto [http://127.0.0.1:8080/](http://127.0.0.1:8080/) on a browser.
+* Go to [http://127.0.0.1:8080/](http://127.0.0.1:8080/) on a browser.
