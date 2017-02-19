@@ -15,7 +15,7 @@ yarn install
 ## Running
 
 * Get `AnyAudio` server code if you can, otherwise wait until we make the repository public.
-* Install `flask-cors`  
+* Since `AnyAudio`'s main server doesn't allows cross site requests, we have to enable them in a local copy of the server for testing purposes. There are many ways to do it, one of them is using `flask-cors`  
     ```bash
     pip install flask-cors
     ```
