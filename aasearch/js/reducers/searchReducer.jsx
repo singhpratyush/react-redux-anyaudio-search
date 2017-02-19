@@ -2,13 +2,13 @@ export default function searchReducer(state={
     results: [],
     searching: false,
     searched: false,
-    error: ''
+    error: false
 }, action) {
     switch (action.type) {
         case "FETCH_RESULTS_FULFILLED": {
             return {
                 ...state,
-                results: action.payload.data.results,
+                results: action.payload.results,
                 searching: false,
                 searched: true
             }
@@ -25,7 +25,7 @@ export default function searchReducer(state={
                 ...state,
                 searching: false,
                 searched: false,
-                error: action.payload.error
+                error: true
             }
         }
     }

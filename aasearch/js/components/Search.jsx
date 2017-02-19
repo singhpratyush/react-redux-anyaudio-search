@@ -31,7 +31,7 @@ export default class Search extends React.Component {
         let msg;
         let data = '';
         if (this.props.searching) {
-            msg = 'Searching';
+            msg = 'Searching...';
         }
         else if(this.props.searched) {
             if (this.props.results.length > 0) {
@@ -41,6 +41,9 @@ export default class Search extends React.Component {
             else {
                 msg = 'No results found!';
             }
+        }
+        if(this.props.error === true) {
+            msg = 'Some error occurred!!';
         }
         return (
             <div>
