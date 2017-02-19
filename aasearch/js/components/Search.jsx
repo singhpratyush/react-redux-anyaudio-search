@@ -19,7 +19,10 @@ export default class Search extends React.Component {
 
     renderResult(item, index) {
         return (
-            <SearchResult key={index} videoId={item.id}/>
+            <SearchResult key={index} videoId={item.id} description={item.description}
+                          getUrl={item.get_url} length={item.length} streamUrl={item.stream_ur}
+                          suggestUrl={item.suggest} thumbUrl={item.thumb} time={item.time} title={item.title}
+                          uploader={item.uploader} views={item.views}/>
         )
     }
 
