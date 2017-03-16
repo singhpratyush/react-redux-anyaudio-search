@@ -2,6 +2,7 @@
 
 An app made to learn about `React-Redux` architecture using [AnyAudio](http://anyaudio.in/)'s API.
 
+[![Code Climate](https://codeclimate.com/github/singhpratyush/react-redux-anyaudio-search/badges/gpa.svg)](https://codeclimate.com/github/singhpratyush/react-redux-anyaudio-search)
 ## Dependencies
 
 * `node`
